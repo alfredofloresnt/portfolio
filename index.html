@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="banner">
+      <div class="container">
+        <div class="navbar">
+          <h4>Alfredo's Portfolio</h4>
+          <div class="links">
+            <ul>
+              <li>About Me</li>
+              <li>Projects</li>
+              <li>CV</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="heading">
+              <h1>Software engineer,</h1>
+              <h1>Web Developer & Designer</h1>
+              <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+              <div class="m-button">
+                <h4><a href="#">Contact</a></h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 center">
+              <img class="propic" src="propic.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container section">
+      <div class="row">
+        <div class="col-md-12 title-section">
+          <h3>About Me</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div class="col-md-4">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div class="col-md-4">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <div class="section projects-section">
+
+          <div class="col-md-12 title-section">
+            <h3>Projects</h3>
+          </div>
+          <div class="container-flexbox" id="projects">
+            <div class="project-element-div">
+            <div class="project-element">
+              <h3>My Time class</h3>
+              <div class="project-element-span">
+                <span class=" material-icons" style="font-size:24px;">arrow_forward_ios</span>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  </body>
+  <script type="text/javascript">
+  var data={"proyectos":[{"nombre":"My Time Class",
+                          "GithubLink":"https://www.google.com"},
+                          {"nombre":"Speed Reading",
+                          "GithubLink":"https://www.facebook.com"},
+                          {"nombre":"Label It",
+                          "GithubLink":"https://www.facebook.com"}
+                        ]
+            }
+            for (var i=0; i<data.proyectos.length;i++){
+              $("#projects").append("<div class='project-element-div'><div class='project-element'><h3>"+data.proyectos[i].nombre+"</h3><div class='project-element-span'><a target='_blank' href='"+data.proyectos[i].GithubLink+"' class=' material-icons' style='font-size:24px;'>arrow_forward_ios</a></div></div></div>");
+            }
+
+
+  </script>
+</html>
